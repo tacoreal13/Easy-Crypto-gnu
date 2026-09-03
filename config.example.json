@@ -1,0 +1,26 @@
+{
+  "_comment": "Copy this file to config.json and fill in your details. install.sh will offer to do this for you interactively.",
+
+  "worker_name": "FedoraRig",
+
+  "gpu": {
+    "enabled": true,
+    "wallet": "XEL:YOUR_BTC_ADDRESS_HERE",
+    "algorithm": "xelishashv3",
+    "pool": "stratum+tcp://xelishash.unmineable.com:3333",
+    "password": "x",
+    "min_power_limit": 60,
+    "max_power_limit": 130,
+    "default_power_limit": 100,
+    "temp_limit": "tc[75-80]"
+  },
+
+  "cpu": {
+    "enabled": true,
+    "wallet": "BTC:YOUR_BTC_ADDRESS_HERE",
+    "pool": "rx.unmineable.com:443",
+    "algo": "rx/0",
+    "password": "x",
+    "tls": true
+  }
+}
