@@ -1,0 +1,31 @@
+{
+  "_comment": "Copy this file to config.json and fill in your details. install.sh will offer to do this for you interactively, and auto-detects your GPU vendor.",
+
+  "worker_name": "FedoraRig",
+
+  "gpu": {
+    "enabled": true,
+    "vendor": "auto",
+    "wallet_nvidia": "XEL:YOUR_BTC_ADDRESS_HERE",
+    "algorithm_nvidia": "xelishashv3",
+    "pool_nvidia": "stratum+tcp://xelishash.unmineable.com:3333",
+    "wallet_amd": "RVN:YOUR_BTC_ADDRESS_HERE",
+    "algorithm_amd": "kawpow",
+    "pool_amd": "stratum+ssl://kp.unmineable.com:4444",
+    "password": "x",
+    "min_power_limit": 60,
+    "max_power_limit": 130,
+    "default_power_limit": 100,
+    "temp_limit": "tc[75-80]"
+  },
+
+  "cpu": {
+    "enabled": true,
+    "wallet": "BTC:YOUR_BTC_ADDRESS_HERE",
+    "pool": "rx.unmineable.com:443",
+    "algo": "rx/0",
+    "password": "x",
+    "tls": true
+  }
+}
+
